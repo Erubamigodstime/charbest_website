@@ -1,0 +1,101 @@
+
+
+.button_wrapper{
+    position: relative;
+    top: 25px;
+
+}
+.button {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: #DC2F02;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 1.1rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.button__icon-wrapper {
+    bottom: 60px;
+    left: 247px;
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    position: relative;
+    color: var(--clr);
+    background-color: #DC2F02;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #FFBA08;
+}
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    color: white;
+    background-color: #DC2F02;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+
+
+
+.button__icon-wrapper:hover {
+    background-color: #FFBA08;
+}
+
+.button__icon-svg {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.button__icon-svg:first-child {
+    transform: translate(0, 0);
+}
+
+
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-290%, 190%);
+}
+
+.button__icon-wrapper:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(190%, -250%);
+}
+
+.button__icon-wrapper:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+@media only screen and (min-width: 1024px){
+    .button {
+    width: 200px;
+    }
+    .button__icon-wrapper {
+        bottom: 60px;
+        left: 200px;
+        
+    }
+}
